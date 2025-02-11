@@ -16,3 +16,5 @@ jobs:
           # export PYTHONPATH=$(pwd)
           pip install mkdocs mkdocs-material
           mkdocs gh-deploy --force
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
