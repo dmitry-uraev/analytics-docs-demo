@@ -9,5 +9,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
-      - run: pip install mkdocs material
-      - run: mkdocs gh-deploy --force
+      - run |
+          python -m venv .venv
+          source .venv/bin/activate
+          export PYTHONPATH=$(pwd)
+          pip install mkdocs material
+          mkdocs gh-deploy --force
