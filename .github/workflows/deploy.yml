@@ -9,7 +9,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
-      - run |
+      - name: Deploy documentation
+        run: |
           python -m venv .venv
           source .venv/bin/activate
           export PYTHONPATH=$(pwd)
