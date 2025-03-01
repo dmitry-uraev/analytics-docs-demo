@@ -1,6 +1,6 @@
 site_name: My Docs
 theme: material
-use_directory_urls: false  # links
-plugins:
-  - multisource-docs:
-      multisource_config: "./application.json"
+#use_directory_urls: false  # links
+#plugins:
+#  - multisource-docs:
+#      multisource_config: "./application.json"
